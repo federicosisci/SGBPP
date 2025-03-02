@@ -1,1 +1,5 @@
 # SGBPP
+We consider the ”Stochastic generalized bin packing problem” where there is a set of items to be shipped, each one with a specific volume and profit, using a set of bins, each one with known capacity and cost. The items are divided in compulsory and non compulsory while bins can be of different types.
+Our goal is to place all the compulsory items and as much non-compulsory items we can in our bins in order to minimize the total cost given by the difference between the costs of the used bins and the profit of the loaded non-compulsory items.
+To do this, we use different algorithms, from the simple Next Fit to the most complicated like Genetic Alg. or Tabu_Search. We apply these in the main file and we also use the optimazier Gurobi. 
+From our  analysis, the Gurobi methods and the Tabu Search Algorithm seem to perform widely better than the Genetic Algorithm, but it might be interesting to test these three methods with different instances, especially increasing the number of items and bins.
